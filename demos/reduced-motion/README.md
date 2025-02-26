@@ -1,4 +1,4 @@
-# Esri Developer & Technology Summit
+# Esri Developer & Technology Summit - Prefers Reduced Motion
 
 ## Project Description
 
