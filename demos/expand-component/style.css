@@ -9,16 +9,20 @@ body.calcite-mode-dark calcite-navigation-logo{
   --calcite-color-text-2:#C7C7C7;
 }
 
-
 html,
-body,
-arcgis-map {
-  padding: 0;
+body {
   margin: 0;
   height: 100%;
-  width: 100%;
 }
 
 calcite-shell-panel[slot="panel-start"] calcite-panel {
   border-top: 0;
+}
+
+/* Custom styling using Calcite's semantic tokens */
+/* Resource: https://developers.arcgis.com/calcite-design-system/foundations/tokens/usage */
+:root,
+:focus {
+  --calcite-color-brand: #000;
+  --calcite-color-focus: var(--calcite-color-brand);
 }

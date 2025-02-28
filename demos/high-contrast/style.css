@@ -9,14 +9,10 @@ body.calcite-mode-dark calcite-navigation-logo{
   --calcite-color-text-2:#C7C7C7;
 }
 
-
 html,
-body,
-arcgis-map {
-  padding: 0;
+body {
   margin: 0;
   height: 100%;
-  width: 100%;
 }
 
 calcite-shell-panel[slot="panel-start"] calcite-panel {
