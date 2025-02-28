@@ -17,17 +17,18 @@ require([
   // Resource: https://developers.arcgis.com/javascript/latest/watch-for-changes/#watch-for-changes-in-the-api
   mapEl.addEventListener("arcgisViewReadyChange", () => {
     reactiveUtils.watch(() => mapEl.view.popup.visible, (visible) => {
+        // Wait for the popup to display and set its focus
+        // Also... wait for the popup to close to set the arcgis-search focus
         if (mapEl.view.popup.visible) {
           setTimeout(() => {
             mapEl.view.popup.focus();
-        }, 100);
+          }, 500);
         } else {
           searchEl.focusSearch();
         }
       }
     );
   });
-
 
   // Initialize the mutation observer
   // Resource: https://developers.arcgis.com/javascript/latest/watch-for-changes/#using-a-mutation-observer
@@ -59,6 +60,7 @@ require([
     lightModeCss.disabled = isDarkMode;
     toggleModeEl.icon = isDarkMode ? "moon" : "brightness";
     document.body.className = isDarkMode ? "calcite-mode-dark" : "";
+    mapEl.basemap = isDarkMode ? "dark-gray" : "gray";
 
     document.querySelectorAll(`.calcite-mode-${isDarkMode ? "light" : "dark"}`).forEach(node =>
       node.classList.replace(`calcite-mode-${isDarkMode ? "light" : "dark"}`, `calcite-mode-${mode}`)
