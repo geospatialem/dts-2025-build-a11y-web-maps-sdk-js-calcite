@@ -1,0 +1,75 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+  <title>2025 Esri Developer & Technology Summit - Reduced Motion</title>
+
+  <!-- Calcite import -->
+  <script type="module" src="https://js.arcgis.com/calcite-components/3.0.3/calcite.esm.js"></script>
+
+  <!-- ArcGIS Maps SDK for JavaScript imports -->
+  <script src="https://js.arcgis.com/4.32/"></script>
+  <link id="jsapi-mode-light" rel="stylesheet" href="https://js.arcgis.com/4.32/esri/themes/light/main.css" />
+  <link disabled id="jsapi-mode-dark" rel="stylesheet" href="https://js.arcgis.com/4.32/esri/themes/dark/main.css" />
+  <script type="module" src="https://js.arcgis.com/map-components/4.32/arcgis-map-components.esm.js"></script>
+
+  <!-- Demo imports -->
+  <script src="./app.js" defer></script>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <calcite-shell content-behind>
+    <calcite-navigation slot="header" id="nav">
+      <calcite-navigation-logo href="#" icon="accessibility" alt="Application logo" slot="logo" heading="Reduced Motion"
+        description="Esri Developer & Technology Summit 2025"></calcite-navigation-logo>
+
+    </calcite-navigation>
+
+    <calcite-shell-panel slot="panel-end" display-mode="float">
+      <calcite-panel heading="Maps SDK for JavaScript" description="Showcased product">
+        <calcite-action id="toggle-instructions" text="Instructions" icon="lightbulb"
+          slot="header-actions-end"></calcite-action>
+        <calcite-tooltip placement="bottom" reference-element="toggle-instructions" slot="header-actions-end">A quick
+          get-going hint about this demo</calcite-tooltip>
+        <calcite-block collapsible heading="Layer effects" description="Adjust blur, highlight, and order">
+          <calcite-icon scale="s" slot="icon" icon="effects"></calcite-icon>
+          <calcite-notice open>
+            <div slot="message">Use layer effects sparingly, for emphasis</div>
+          </calcite-notice>
+        </calcite-block>
+
+        <calcite-block collapsible heading="Symbology" description="Select type, color, and transparency">
+          <calcite-icon scale="s" slot="icon" icon="map-pin"></calcite-icon>
+          <calcite-label>
+            Effect type
+            <calcite-segmented-control width="full">
+              <calcite-segmented-control-item value="Blur">Blur</calcite-segmented-control-item>
+              <calcite-segmented-control-item checked value="Highlight">Highlight</calcite-segmented-control-item>
+            </calcite-segmented-control>
+          </calcite-label>
+
+          <calcite-label>
+            Something
+            <calcite-input placeholder="A great placeholder"></calcite-input>
+          </calcite-label>
+          <calcite-label>
+            Something numerical<calcite-input-number value="25" placeholder="--" suffix-text="%"
+              alignment="end"></calcite-input-number>
+          </calcite-label>
+        </calcite-block>
+
+        <calcite-fab slot="fab" text="Add something" text-enabled></calcite-fab>
+
+
+      </calcite-panel>
+    </calcite-shell-panel>
+
+    <arcgis-map item-id="05e015c5f0314db9a487a9b46cb37eca"> </arcgis-map>
+  </calcite-shell>
+
+
+</body>
+
+</html>
