@@ -2,7 +2,7 @@
 
 ## Project Description
 
-This application demonstrates how to enhance accessibility by setting the `aria-describedby` attribute for the map element. Additionally, it showcases the use of `aria-live` regions to provide dynamic updates for assistive technologies.
+This application demonstrates how to enhance accessibility by setting the `aria-describedby` attribute for the map element. Additionally, it showcases the use of `aria-live` regions to provide dynamic updates for assistive technologies. Note: Some assistive technologies such as [Narrator](https://a11ysupport.io/tech/aria/aria-describedby_attribute) may not support aria-describedby
 
 ## Testing `aria-describedby`
 
@@ -24,6 +24,10 @@ This application demonstrates how to enhance accessibility by setting the `aria-
 
 The `aria-describedby` attribute is used to provide additional descriptive information for an element, which can be especially useful for users of assistive technologies. By linking the element to another element that contains the description, screen readers can convey more context and details to users, enhancing their understanding and interaction with the web content. This is particularly important for complex elements like maps, where visual information needs to be translated into meaningful text descriptions.
 
+### Why Use `aria-describedby` Instead of `aria-label`
+
+While both `aria-describedby` and `aria-label` are used to provide accessible descriptions, they serve different purposes. The `aria-label` attribute is used to provide a concise, accessible name for an element, which is typically short and to the point. In contrast, `aria-describedby` is used to link an element to another element that contains a more detailed description. This is particularly useful for complex elements like maps, where a brief label would not suffice to convey all necessary information. By using `aria-describedby`, we can provide users with assistive technologies a richer, more informative description that enhances their understanding and interaction with the map.
+
 For more information on how to use `aria-describedby`, refer to the [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-describedby).
 
 ## Understanding `aria-live`
@@ -36,7 +40,8 @@ When an element has the `aria-live` attribute, screen readers will monitor chang
 
 - **off**: Default value. Updates are not announced.
 - **polite**: Updates are announced at the next available opportunity, allowing the user to finish their current task without interruption.
-- **assertive**: Updates are announced immediately, interrupting the current task. This should be used sparingly and only for critical updates.
+  -- **assertive**: Updates are announced immediately, interrupting the current task. This should be used sparingly and only for critical updates.
+  +- **assertive**: Updates are announced immediately, interrupting the current task. **This should be used sparingly and only for critical updates.**
 
 ### When to Use `aria-live`
 
