@@ -12,7 +12,7 @@ Presented at the 2025 Esri Developer Summit by Kelly Hutchins and Kitty Hurley o
    - Provide context to when the map has loaded and include a description when the map is in focus to further WCAG's [1.3.1: Info and Relationships](https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships.html) Success Criterion.
 2. [Expand Component Focus Trap Disabled](demos/expand-component/index.html)
    - Provide users the ability to not be trapped when interacting with the Expand component to further WCAG's [2.1.2: No Keyboard Trap](https://www.w3.org/WAI/WCAG21/Understanding/no-keyboard-trap.html) Success Criterion.
-3. Consistent Focus 🚧
+3. [Consistent Focus](demos/consistent-focus/index.html)
    - Provide a consistent focus order throughout your UI supporting WCAG's [2.4.3: Focus Order](https://www.w3.org/WAI/WCAG22/Understanding/focus-order.html) and [3.2.3: Consistent Navigation](https://www.w3.org/WAI/WCAG22/Understanding/consistent-navigation.html) Success Criterion.
 4. [High Contrast](demos/high-contrast/index.html)
    - Explore contrast with your data, altering the basemap and layer effects to support the map's purpose when a user has enabled high contrast on their operating system, also supporting WCAG's [1.4.3: Contrast Minimum](https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum) Success Criterion.
