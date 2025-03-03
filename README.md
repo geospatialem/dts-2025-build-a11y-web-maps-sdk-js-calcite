@@ -16,7 +16,7 @@ Presented at the 2025 Esri Developer Summit by Kelly Hutchins and Kitty Hurley o
    - Provide a consistent focus order throughout your UI supporting WCAG's [2.4.3: Focus Order](https://www.w3.org/WAI/WCAG22/Understanding/focus-order.html) and [3.2.3: Consistent Navigation](https://www.w3.org/WAI/WCAG22/Understanding/consistent-navigation.html) Success Criterion.
 4. [High Contrast](demos/high-contrast/index.html)
    - Explore contrast with your data, altering the basemap and layer effects to support the map's purpose when a user has enabled high contrast on their operating system, also supporting WCAG's [1.4.3: Contrast Minimum](https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum) Success Criterion.
-5. [Reduced MotioN](demos/reduced-motion/index.html)
+5. [Reduced Motion](demos/reduced-motion/index.html)
    - Support reduced motion when a user has enabled reduced motion, or disabled animations on their operating system, also supporting WCAG's [2.3.3: Animation from Interactions](https://www.w3.org/WAI/WCAG22/Understanding/animation-from-interactions.html) Success Criterion.
 
 ## Resources
