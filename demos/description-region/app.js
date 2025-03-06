@@ -2,11 +2,11 @@ const toggleModeEl = document.getElementById("toggle-mode");
 const mapEl = document.querySelector("arcgis-map");
 const darkModeCss = document.getElementById("jsapi-mode-dark");
 const lightModeCss = document.getElementById("jsapi-mode-light");
+
 const liveRegion = document.getElementById("liveRegion");
-
 let mode = "light";
-
 toggleModeEl.addEventListener("click", handleModeChange);
+
 mapEl.addEventListener("arcgisViewReadyChange", handleArcgisViewReadyChange);
 
 function handleArcgisViewReadyChange(event) {
