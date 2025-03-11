@@ -2,11 +2,11 @@ const toggleModeEl = document.getElementById("toggle-mode");
 const mapEl = document.querySelector("arcgis-map");
 const darkModeCss = document.getElementById("jsapi-mode-dark");
 const lightModeCss = document.getElementById("jsapi-mode-light");
+
 const liveRegion = document.getElementById("liveRegion");
-
 let mode = "light";
-
 toggleModeEl.addEventListener("click", handleModeChange);
+
 mapEl.addEventListener("arcgisViewReadyChange", handleArcgisViewReadyChange);
 
 function handleArcgisViewReadyChange(event) {
@@ -26,7 +26,7 @@ function handleModeChange() {
   lightModeCss.disabled = isDarkMode;
   toggleModeEl.icon = isDarkMode ? "moon" : "brightness";
   document.body.className = isDarkMode ? "calcite-mode-dark" : "";
-
+  mapEl.basemap = isDarkMode ? "dark-gray" : "gray";
   document.querySelectorAll(`.calcite-mode-${isDarkMode ? "light" : "dark"}`).forEach(node =>
     node.classList.replace(`calcite-mode-${isDarkMode ? "light" : "dark"}`, `calcite-mode-${mode}`)
   );
