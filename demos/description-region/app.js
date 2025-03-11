@@ -26,7 +26,7 @@ function handleModeChange() {
   lightModeCss.disabled = isDarkMode;
   toggleModeEl.icon = isDarkMode ? "moon" : "brightness";
   document.body.className = isDarkMode ? "calcite-mode-dark" : "";
-
+  mapEl.basemap = isDarkMode ? "dark-gray" : "gray";
   document.querySelectorAll(`.calcite-mode-${isDarkMode ? "light" : "dark"}`).forEach(node =>
     node.classList.replace(`calcite-mode-${isDarkMode ? "light" : "dark"}`, `calcite-mode-${mode}`)
   );
