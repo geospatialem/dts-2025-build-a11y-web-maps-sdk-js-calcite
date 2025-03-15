@@ -4,7 +4,7 @@ Presented at the 2025 Esri Developer Summit by Kelly Hutchins and Kitty Hurley o
 
 - [Demo Site](https://geospatialem.github.io/dts-2025-build-a11y-web-maps-sdk-js-calcite)
 - [Code](https://github.com/geospatialem/dts-2025-build-a11y-web-maps-sdk-js-calcite)
-- Slides, opens in a new window 🚧 _Coming soon_ 🚧
+- <a href="2025-devtechsummit-building-accessible-web-apps-js-calcite.pdf" target="_blank">Slides</a>, opens in a new window
 
 ## Demos
 
